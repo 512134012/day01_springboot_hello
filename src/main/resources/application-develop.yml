@@ -1,0 +1,6 @@
+
+image:
+  server: www.qiangfeng.com
+spring:
+  profiles:
+    active: producer

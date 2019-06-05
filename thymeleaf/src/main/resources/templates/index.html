@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    Hello Spring Boot!!!
+
+
+    <span th:text="${starName}">超级萝莉</span><hr/>
+    name:<span th:text="${star.name}"></span>
+    age:<span th:text="${star.age}"></span><hr/>
+    <tr th:each="s : ${list}">
+        <td th:text="${s.name}"></td>
+        <td th:text="${s.age}" th:if="${s.age>10}"></td>
+    </tr>
+
+</body>
+</html>
